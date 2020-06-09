@@ -14,9 +14,9 @@ class CreateMataKuliahTable extends Migration
     public function up()
     {
         Schema::create('mata_kuliah', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->string('nama_mata_kuliah');
-            $table->timestamps();
+          $table->bigIncrements('id');
+          $table->string('nama');
+          $table->timestamps();
         });
     }
 
